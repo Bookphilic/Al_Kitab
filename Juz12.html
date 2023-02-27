@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="img/AlKitab_icon.png" type="image/x-icon">
+    <title>Al-Kitab : Quran Recitation App</title>
+</head>
+<!-- Main Body -->
+<body oncontextmenu="return false;">
+    <!-- Header Starts -->
+    <header>
+
+        <!-- Left box starts -->
+        <div class="menu_side">
+            <div class="logo">
+                <h1><a href="index.php"><img src="img/AlKitab.png" alt="Al-Kitab"></a></h1>
+            </div>
+            
+            <!-- Playlist starts -->
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-headphones"></i>All Surah</h4>
+                <h4><span></span><i class="bi bi-headphones"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-headphones"></i>Recommended</h4>
+            <!-- Playlist ends -->
+            </div>
+            <!-- Menu song starts -->
+            <div class="menu_song">
+                
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="img/song_poster.gif" alt="Image">
+                    <h5>Surah <br><div class="subtitle">Surah</div></h5>
+                    <i class="bi playListPlay bi-play-circle" id="10"></i>
+                </li>
+                <li class="songItem">
+                    <span>12</span>
+                    <img src="img/song_poster.gif" alt="Image">
+                    <h5>Surah <br><div class="subtitle">Surah</div></h5>
+                    <i class="bi playListPlay bi-play-circle" id="11"></i>
+                </li>
+                
+            <!-- Menu song ends -->
+            </div>
+        <!-- Left box ends -->
+        </div>
+
+
+        <!-- Right box starts -->
+        <div class="song_side">
+            <!-- Navigation Bar Starts -->
+            <nav>
+                <ul>
+                    <li>DISCOVER<span></span></li>
+                    <li><a style="text-decoration: none" href="https://thebookphilic.blogspot.com/2022/04/quran-allah.html">MY LIBRARY</a></li>
+                    <li><a style="text-decoration: none" href="https://thebookphilic.blogspot.com/p/quran.html">QURAN</a></li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" spellcheck="false" placeholder="Search here...">
+                    <div class="search_results">
+                        <!-- <a href="" class="card">
+                            <img src="audio/HasbiRabbi/thumbnail.jpg" alt="">
+                            <div class="content">
+                                Hasbi Rabbi
+                                <div class="subtitle">Danish and Dawar</div>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="user">
+                    <a href="login.php"><img src="img/user.jpeg" alt="user"></a>
+                </div>
+            <!-- Navigation Bar Ends -->
+            </nav>
+            <!-- Content Starts -->
+            <div class="content">
+                <h1>Al-Bukhari</h1>
+                <p><span>خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</span><br> The Prophet (Peace be upon him) said <b>"The best among you are those who learn the Qur'an and teach it."</b></p>
+                <div class="buttons">
+                    <button id="play" onclick="document.getElementById('masterPlay').click()">PLAY</button>
+                    <a href="https://www.blogger.com/follow.g?view=FOLLOW&blogID=220498697364185430"><button>FOLLOW</button></a>
+                </div>
+            <!-- Content Ends -->
+            </div>
+            <!-- Popular Songs Starts -->
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Parah 1 to 30</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    
+                    
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/song_poster.gif" alt="Image">
+                            <i class="bi playListPlay bi-play-circle" id="125"></i>
+                        </div>
+                        <h5>Parah <br><div class="subtitle">Parah</div></h5>
+                    </li>
+                    
+                </div>
+                
+                
+            <!-- Popular Songs Ends -->
+            </div>
+            
+            <!-- Popular Artists Start -->
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Juz</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                        <i class="bi bi-arrow-right-short"id="pop_art_right"></i>
+                    </div>
+                </div>
+                <div class="item">
+
+
+                    <div class="maincontainer">
+                        <a href="juz1.php">
+                        <div class="back">
+                            <h3>Juz 1</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz2.php">
+                        <div class="back">
+                            <h3>Juz 2</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz3.php">
+                        <div class="back">
+                            <h3>Juz 3</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz4.php">
+                        <div class="back">
+                            <h3>Juz 4</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz5.php">
+                        <div class="back">
+                            <h3>Juz 5</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz6.php">
+                        <div class="back">
+                            <h3>Juz 6</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz7.php">
+                        <div class="back">
+                            <h3>Juz 7</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz8.php">
+                        <div class="back">
+                            <h3>Juz 8</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz9.php">
+                        <div class="back">
+                            <h3>Juz 9</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz10.php">
+                        <div class="back">
+                            <h3>Juz 10</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz11.php">
+                        <div class="back">
+                            <h3>Juz 11</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz12.php">
+                        <div class="back">
+                            <h3>Juz 12</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz13.php">
+                        <div class="back">
+                            <h3>Juz 13</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz14.php">
+                        <div class="back">
+                            <h3>Juz 14</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz15.php">
+                        <div class="back">
+                            <h3>Juz 15</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz16.php">
+                        <div class="back">
+                            <h3>Juz 16</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz17.php">
+                        <div class="back">
+                            <h3>Juz 17</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz18.php">
+                        <div class="back">
+                            <h3>Juz 18</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz19.php">
+                        <div class="back">
+                            <h3>Juz 19</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz20.php">
+                        <div class="back">
+                            <h3>Juz 20</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz21.php">
+                        <div class="back">
+                            <h3>Juz 21</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz22.php">
+                        <div class="back">
+                            <h3>Juz 22</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz23.php">
+                        <div class="back">
+                            <h3>Juz 23</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz24.php">
+                        <div class="back">
+                            <h3>Juz 24</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz25.php">
+                        <div class="back">
+                            <h3>Juz 25</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz26.php">
+                        <div class="back">
+                            <h3>Juz 26</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz27.php">
+                        <div class="back">
+                            <h3>Juz 27</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz28.php">
+                        <div class="back">
+                            <h3>Juz 28</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz29.php">
+                        <div class="back">
+                            <h3>Juz 29</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="maincontainer">
+                        <a href="juz30.php">
+                        <div class="back">
+                            <h3>Juz 30</h3>
+                        </div>
+                        <div class="front">
+                            <div class="image">
+                                    <img src="img/juz.gif" alt="Juz">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            <!-- Popular Artists End -->
+            </div>
+        <!-- Right box ends -->            
+        </div>
+
+        <div class="upperbox">
+        </div>
+
+        <!-- Bottom box starts -->
+        <div class="master_play">
+            <!-- Music Wave -->
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="img/song_poster.gif" alt="" id="poster_master_play">
+            <h5 id="title">
+                Al-Fatiha
+                <div class="subtitle">(The Openning)</div>
+            </h5>
+            <!-- Icons -->
+            <div class="icon">
+                <i class="bi shuffle bi-headphones">next</i>
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+                <a href="audio/surah/1.mp3" download="" id="download_music"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+            </div>
+            <!-- Time Range -->
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+            <!-- Volume -->
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+
+        <!-- Bottom box ends -->
+        </div>
+
+    <!-- Header Ends -->
+    </header>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

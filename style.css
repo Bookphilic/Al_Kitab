@@ -23,8 +23,8 @@ body{
 /* Header and its component is targetted */
 header {
     position: relative;
-    width: 85%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     /* border: 1px solid #000; */
     display: flex;
     flex-wrap: wrap;
@@ -39,32 +39,32 @@ header .menu_side img{
     position: relative;
 }
 header .logo{
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 80px;
 }
 /* Left side */
 header .menu_side, .song_side{
     width: 25%;
     height: 90%;
     /* border: 1px solid black; */
-    background: #d8f9ff;
-    border-radius: 15px 0px 0px 0px;
+    background: #fff;
     color: #000;
+}
+header .menu_side h6{
+    display: none;
 }
 /* Right side */
 header .song_side{
     width: 75%;
-    background: #c1f1fe;
-    border-radius: 0px 15px 0px 0px;
+    background: #d3fff1;
 }
 /* Bottom side */
 header .master_play{
     width: 100%;
     height: 10%;
     /* border: 1px solid black; */
-    background: #d8f9ff;
+    background: #d3fff1;
 	box-shadow: 0 -10px 8px -12px #090f1f; 
-    border-radius: 0px 0px 15px 15px;
 }
 
 
@@ -90,7 +90,7 @@ header .menu_side .playlist h4{
     transition: .3s linear;
 }
 header .menu_side .playlist h4:hover{
-    color: #36e2ec;
+    color: #2AC291;
 }
 header .menu_side .playlist h4 span{
     position: relative;
@@ -109,7 +109,7 @@ header .menu_side .playlist h4 span:before{
 }
 /* Hover effect of Song title */
 header .menu_side .playlist h4:hover span:before{
-    border: 2px solid #36e2ec;
+    border: 2px solid #2AC291;
 }
 header .menu_side .playlist h4 .bi{
     display: none;
@@ -127,7 +127,7 @@ header .menu_side .playlist .active .bi{
 /* Left side Song List Height*/
 header .menu_side .menu_song{
     width: 100%;
-    height: 70%;
+    height: 65%;
     /* border: 1px solid black; */
     margin-top: 15px;
     overflow: auto;
@@ -218,7 +218,7 @@ header .master_play .wave{
 header .master_play .wave .wave1{
     width: 3px;
     height: 5px;
-    background: #36e2ec;
+    background: #73fec7;
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
     /* animation: wave 0.5s linear infinite; */
@@ -332,7 +332,7 @@ header .master_play .bi-pause-fill{
 }
 /* Play buttun circle */
 header .master_play .icon .bi:nth-child(3){
-    border: 2px solid rgba(54, 226, 236, 0.5);
+    border: 2px solid #73fec7;
     border-radius: 50%;
     padding: 1px 5px 0px 7px;
     margin: 0px 5px;
@@ -375,13 +375,13 @@ header .master_play .bar{
     position: relative;
     width: 43%;
     height: 2px;
-    background: rgb(105, 105, 170, .1);
+    background: rgba(0, 0, 246, 0.2);
     margin: 0px 15px 0px 10px;
 }
 /* Time Range Bar2 */
 header .master_play .bar2{
     position: absolute;
-    background: #36e2ec;
+    background: #2AC291;
     width: 0%;
     height: 100%;
     top: 0;
@@ -392,7 +392,7 @@ header .master_play .bar .dot{
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #36e2ec;
+    background-color: #2AC291;
     border-radius: 50%;
     left: 0%;
     top: -1.92px;
@@ -403,12 +403,12 @@ header .master_play .bar .dot::before{
     content: '';
     width: 15px;
     height: 15px;
-    border: 1px solid #36e2ec;
+    border: 1px solid #2AC291;
     border-radius: 50%;
     left: -6px;
     top: -6px;
     /* For Inside shadow */
-    box-shadow: inset 0px 0px 3px #36e2ec;
+    box-shadow: inset 0px 0px 3px #2AC291;
 }
 /* Time Range Positioning */
 header .master_play .bar input{
@@ -425,7 +425,7 @@ header .master_play .vol{
     position: relative;
     width: 100px;
     height: 2px;
-    background: rgb(105, 105, 170, .1);
+    background: rgba(0, 0, 246, 0.2);
     margin-left: 50px;
 }
 /* Volume Down Icon */
@@ -449,7 +449,7 @@ header .master_play .vol input{
 /* Volume Bar Positioning and coloring */
 header .master_play .vol .vol_bar{
     position: absolute;
-    background: #36e2ec;
+    background: #2AC291;
     width: 100%;
     height: 100%;
     top: 0;
@@ -460,7 +460,7 @@ header .master_play .vol .dot{
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #36e2ec;
+    background-color: #2AC291;
     border-radius: 50%;
     left: 100%;
     top: -1.92px;
@@ -471,12 +471,12 @@ header .master_play .vol .dot::before{
     content: '';
     width: 15px;
     height: 15px;
-    border: 1px solid #36e2ec;
+    border: 1px solid #2AC291;
     border-radius: 50%;
     left: -6px;
     top: -6px;
     /* For Inside shadow */
-    box-shadow: inset 0px 0px 3px #36e2ec;
+    box-shadow: inset 0px 0px 3px #2AC291;
 }
 /* Master Play Target Ends */
 
@@ -500,7 +500,7 @@ header .song_side::-webkit-scrollbar-thumb{
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
-    background-image: linear-gradient(180deg, #36e2ec 0%, #708ad4 99%);
+    background-image: linear-gradient(180deg, #2AC291 0%, #36e2ec 99%);
     box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 /* header .song_side::before{
@@ -539,7 +539,7 @@ header .song_side nav li{
 }
 /* Navigation Bar List Hover Effect*/
 header .song_side nav li:hover{
-    color:#36e2ec;
+    color:#2AC291;
 }
 /* Activate Discover By using nth-child(1)*/
 header .song_side nav li:nth-child(1){
@@ -550,7 +550,7 @@ header .song_side nav ul li span{
     position: absolute;
     width: 100%;
     height: 2.5px;
-    background: #36e2ec;
+    background: #2AC291;
     bottom: -5px;
     left: 0;
     border-radius: 20px;
@@ -582,7 +582,7 @@ header .song_side nav .search::before{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(184, 184, 184, .3);
+    background: rgb(255, 235, 196, 1);
     border-radius: 20px;
     backdrop-filter: blur(5px);
     z-index: -1;
@@ -590,16 +590,47 @@ header .song_side nav .search::before{
 header .song_side nav .search .search_results{
     position: absolute;
     width: 100%;
-    height: 200px;
-    border: 1px solid black;
+    height: 195px;
+    /* border: 1px solid black; */
     margin-top: 10px;
     border-radius: 10px;
-
+    left: 0;
+    overflow: auto;
+}
+header .song_side nav .search .search_results::-webkit-scrollbar{
+    display: none;
 }
 header .song_side nav .search .search_results .card{
     width: 100%;
     min-height: 45px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    /* to avoid underline under the title */
+    text-decoration: none;
+    display: none;
+}
+header .song_side nav .search .search_results .card img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+header .song_side nav .search .search_results .card .content{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+}
+header .song_side nav .search .search_results .card .content .subtitle{
+    font-size: 11px;
+    color: #a4a8b4;
+    font-weight: 500;
 }
 header .song_side nav .search .bi{
     font-size: 13px;
@@ -680,6 +711,13 @@ header .song_side .content p{
     font-size: 11px;
     font-weight: 400;
     color: #4c5262;
+    margin: 3px;
+}
+/* Paragraph*/
+header .song_side .content p span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #4c5262;
     margin: 5px;
 }
 /* Play and Follow Buttons*/
@@ -690,10 +728,10 @@ header .song_side .content .buttons{
 header .song_side .content .buttons button{
     width: 130px;
     height: 30px;
-    border: 2px solid #36e2ec;
+    border: 2px solid #73fec7;
     outline: none;
     border-radius: 20px;
-    background: #5adae0;
+    background: #2AC291;
     color: #fff;
     cursor: pointer;
     transition: .3s linear;
@@ -705,10 +743,10 @@ header .song_side .content .buttons button:hover{
     color: #363636;
 }
 /* Avtive Play and Follow Buttons effect*/
-header .song_side .content .buttons button:nth-child(2){
+/* header .song_side .content .buttons button:nth-child(2){
     background: #f7ad1d;
     color: #363636;
-}
+} */
 
 /* Popular Songs Starts */
 header .song_side .popular_song{
@@ -927,3 +965,95 @@ header .song_side .popular_artists .item .maincontainer:hover .back{
 
 /* Right Box Target Ends */
 
+
+/* Login style */
+
+header .left_bx1 , .right_bx1{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background: #c1f1fe;
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .left_bx1{
+    width: 35%;
+    background: white;
+    box-shadow: 5px 0px 2px #090f1f;
+    border-radius: 0px 0px 0px 0px;
+}
+header .left_bx1 .content{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid black; */
+    padding: 25px 20px;
+    border-radius: 20px;
+    background: white;
+}
+header .left_bx1 .content .card{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+header .left_bx1 .content label{
+    font-size: 14px;
+}
+header .left_bx1 .content .card input{
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid rgb(154, 154, 154);
+    background: rgb(238, 238, 238);
+    margin-top: 5px;
+    border-radius: 20px;
+
+}
+header .left_bx1 .content .submit{
+    margin-top: 30px;
+    padding: 8px 20px;
+    color: white;
+    background: #F7AD1D;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: #2AC291;
+}
+header .left_bx1 .content .check{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+header .left_bx1 .content .check span{
+    margin-left: 5px;
+    font-size: 13px;
+}
+header .left_bx1 .content p{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 13px;
+}
+header .left_bx1 .content p a{
+    text-decoration: none;
+    color: #2AC291;
+    font-weight: bold;
+}
+header .right_bx1 img{
+    width: 100%;
+}
+header .right_bx1 h3{
+    position: absolute;
+    background: #2AC291;
+    color: #000;
+    right: 0;
+    bottom: 20px;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    z-index: 99999999999999999999999999999999999999999999;
+}
